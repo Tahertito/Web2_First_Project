@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>English-Alphabet</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+<style>
+    img {
+        display: none;
+    }
+
+    .center {
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #container {
+        border-style: groove;
+        border-color: burlywood;
+        padding-top: 10;
+    }
+</style>
+
+<body>
+
+    <div id="container" class="w3-container">
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="number"> Number of Letters: </label>
+                <input id="input" class="form-control" type="number" min="1" max="26" name="LettersNumber">
+                <br>
+                <button id="generator" class="btn btn-info" type="button">Generate! </button>
+            </div>
+            <p id="errorMessage"></p>
+        </form>
+        <div id="buttonsContainer">
+
+        </div>
+        <div>
+            <img id="showImg" src="pictures\A.jpg" alt="not available" class="center">
+
+        </div>
+    </div>
+
+    <script src="app.js">
+       
+    </script>
+</body>
+
+</html>
