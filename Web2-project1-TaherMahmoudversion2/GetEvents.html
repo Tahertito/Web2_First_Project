@@ -1,0 +1,44 @@
+<html>
+    <head>
+<title>AdminBoard</title>
+<script src="jquery3.2.1.min.js"></script>
+    </head>
+    <style>
+    
+    </style>
+    <body>
+
+        <div id="container" class="">
+           
+   
+
+        </div>
+            
+        
+
+
+
+        <script>
+        
+        $(document).ready(function(){
+            setInterval(GetData,5000);
+            $container=$("#container");
+
+        });
+        function GetData(){
+            $.ajax({
+        "type":"get",
+        "url":"http://localhost:8080/dashboard/Web2-project1-TaherMahmoud/getData.php",
+        "data":null,
+        "success":function(response){
+            console.log(response);
+            $container.html(response);
+            
+           
+           
+        }
+            });
+        }
+        </script>
+    </body>
+</html>
