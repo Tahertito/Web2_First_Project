@@ -122,7 +122,7 @@ function SendToServer() {
     
     $.ajax({
         "type":"post",
-        "url":"http://localhost:8080/dashboard/Web2-project1-TaherMahmoud/index.php",
+        "url":"http://localhost:8080/dashboard/Web2-project1-TaherMahmoudversion2/index.php",
         "data":{"Data":JSON.stringify(localStorage)},
         "success":function(response){
             //console.log(response);
